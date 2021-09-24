@@ -6,9 +6,10 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint": "eslint \"src/**/*.{js,jsx}\" --cache",
-    "lint:fix": "eslint \"src/**/*.{js,jsx}\"--cache --fix"
+    "lint:fix": "eslint \"src/**/*.{js,jsx}\" --cache --fix"
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-redux": "^7.2.5",
