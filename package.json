@@ -1,6 +1,7 @@
 {
   "name": "few2.3-lab-04-redux-counter",
   "version": "0.0.0",
+  "homepage": ".",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
