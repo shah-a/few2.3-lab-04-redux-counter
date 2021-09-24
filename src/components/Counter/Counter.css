@@ -1,0 +1,5 @@
+@layer base {
+  .Counter button {
+    @apply inline-block text-2xl h-10 w-10 border rounded-full;
+  }
+}

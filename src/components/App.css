@@ -1,0 +1,5 @@
+@layer base {
+  .App.theme {
+    @apply text-white bg-gradient-to-b from-gray-700 to-gray-900;
+  }
+}
