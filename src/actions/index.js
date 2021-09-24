@@ -1,5 +1,6 @@
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
+const RESET = 'RESET';
 
 const increment = (val) => ({
   type: INCREMENT,
@@ -11,7 +12,12 @@ const decrement = (val) => ({
   payload: val,
 });
 
+const reset = () => ({
+  type: RESET,
+});
+
 export {
   INCREMENT, increment,
   DECREMENT, decrement,
+  RESET, reset,
 };

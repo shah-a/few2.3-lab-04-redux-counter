@@ -1,11 +1,10 @@
 import { INCREMENT, DECREMENT, RESET } from '../actions';
 
-const counterReducer = (state = 0, action) => {
+const clicksReducer = (state = 0, action) => {
   switch (action.type) {
     case INCREMENT:
-      return state + action.payload;
     case DECREMENT:
-      return state - action.payload;
+      return state + 1;
     case RESET:
       return 0;
     default:
@@ -13,4 +12,4 @@ const counterReducer = (state = 0, action) => {
   }
 };
 
-export default counterReducer;
+export default clicksReducer;
