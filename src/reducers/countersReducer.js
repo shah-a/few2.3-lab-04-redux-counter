@@ -1,9 +1,9 @@
 import { INC, DEC, RES } from '../actions';
 
 const counters = [
-  { count: 0, step: 1 },
-  { count: 0, step: 5 },
-  { count: 0, step: 10 },
+  { id: 1, count: 0, step: 1 },
+  { id: 2, count: 0, step: 5 },
+  { id: 3, count: 0, step: 10 },
 ];
 
 const countersReducer = (state = counters, action) => {
