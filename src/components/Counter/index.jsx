@@ -5,6 +5,7 @@ import { inc, dec } from '../../actions';
 
 function Counter({ index, count, step }) {
   const dispatch = useDispatch();
+
   return (
     <div className="Counter flex items-center px-5">
       <button type="button" onClick={() => dispatch(dec(index, step))}>

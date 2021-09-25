@@ -17,8 +17,13 @@ const countersReducer = (state = counters, action) => {
       newState[action.payload.index].count -= action.payload.step;
       return newState;
     case RES:
-      // return newState.map((counter) => ({ count: 0, step: counter.step }));
-      return counters;
+      // return counters;
+      // return [...counters];
+      return newState.map((counter) => ({
+        id: counter.id,
+        count: 0,
+        step: counter.step,
+      }));
     default:
       return state;
   }

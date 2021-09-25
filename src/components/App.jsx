@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import './App.css';
 import Counter from './Counter';
-// import Clicks from './Clicks';
+import Reset from './Reset';
 
 function App() {
   const counters = useSelector((state) => state.counters);
@@ -19,7 +19,7 @@ function App() {
           />
         ))}
       </div>
-      {/* <Clicks count={count} count2={count2} count3={count3} /> */}
+      <Reset />
     </div>
   );
 }
