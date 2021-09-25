@@ -1,14 +1,14 @@
 // 'increment', 'decrement', and 'reset' actions
 const [INC, DEC, RES] = ['INC', 'DEC', 'RES'];
 
-const inc = (i, step) => ({
+const inc = (index, step) => ({
   type: INC,
-  payload: { i, step },
+  payload: { index, step },
 });
 
-const dec = (i, step) => ({
+const dec = (index, step) => ({
   type: DEC,
-  payload: { i, step },
+  payload: { index, step },
 });
 
 const res = () => ({
