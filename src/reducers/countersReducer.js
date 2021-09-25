@@ -6,7 +6,7 @@ const counters = [
   { count: 0, step: 10 },
 ];
 
-const counterReducer = (state = counters, action) => {
+const countersReducer = (state = counters, action) => {
   const newState = [...state];
 
   switch (action.type) {
@@ -24,4 +24,4 @@ const counterReducer = (state = counters, action) => {
   }
 };
 
-export default counterReducer;
+export default countersReducer;
