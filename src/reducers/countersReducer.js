@@ -11,19 +11,21 @@ const countersReducer = (state = counters, action) => {
 
   switch (action.type) {
     case INC:
-      newState[action.payload.index].count += action.payload.step;
-      return newState;
+      return newState.map((counter, index) => {
+        if (action.payload.index === index) {
+          return { ...counter, count: counter.count + action.payload.step };
+        }
+        return { ...counter };
+      });
     case DEC:
-      newState[action.payload.index].count -= action.payload.step;
-      return newState;
+      return newState.map((counter, index) => {
+        if (action.payload.index === index) {
+          return { ...counter, count: counter.count - action.payload.step };
+        }
+        return { ...counter };
+      });
     case RES:
-      // return counters;
-      // return [...counters];
-      return newState.map((counter) => ({
-        id: counter.id,
-        count: 0,
-        step: counter.step,
-      }));
+      return newState.map((counter) => ({ ...counter, count: 0 }));
     default:
       return state;
   }
